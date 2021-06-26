@@ -17,10 +17,10 @@ const Home = () => {
           </div>
           {/* END AVATAR */}
           <div className="details">
-            <h3 className="name">Adriano Smith</h3>
+            <h3 className="name">Dwi Darma</h3>
             <p className="job">
-              Creative Photographer based in New York and happy to travel all
-              over Europe to capture photos.
+              Passionate Website Developer Focusing On Building Fast Responsive app.
+              To be flexible to learn new things and always open with new technology
             </p>
             {/* END JOB */}
             <Social />

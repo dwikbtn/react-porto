@@ -17,7 +17,7 @@ const HomeLight = () => {
             <div className="leftpart_inner">
               <div className="logo">
                 <Link className="navbar-brand" to="/">
-                  <img src="/assets/img/logo/dark.png" alt="brand" />
+                  <h1 className="name">Dwi's Porto</h1>
                 </Link>
               </div>
               {/* END LOGO */}
@@ -51,18 +51,18 @@ const HomeLight = () => {
                   <Tab>
                     <img
                       className="svg"
-                      src="/assets/img/svg/paper.svg"
-                      alt="paper"
-                    />
-                    <span className="menu_content">News</span>
-                  </Tab>
-                  <Tab>
-                    <img
-                      className="svg"
                       src="/assets/img/svg/mail.svg"
                       alt="mail"
                     />
                     <span className="menu_content"> Contact</span>
+                  </Tab>
+                  <Tab>
+                    <img
+                      className="svg"
+                      src="/assets/img/svg/paper.svg"
+                      alt="paper"
+                    />
+                    <span className="menu_content">Blog Post</span>
                   </Tab>
                 </ul>
               </div>
@@ -70,13 +70,13 @@ const HomeLight = () => {
 
               <div className="copyright">
                 <p>
-                  &copy; {new Date().getFullYear()} Tokyo <br /> Created by 
+                  &copy; {new Date().getFullYear()} Portfolio <br /> Created by
                   <a
-                    href="https://themeforest.net/user/ib-themes"
+                    href="/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                  Ib-Themes
+                    Dwi Darma
                   </a>
                 </p>
               </div>
@@ -107,15 +107,15 @@ const HomeLight = () => {
                 </TabPanel>
                 {/* END PORTFOLIO MENU TAB CONTENT */}
 
-                <TabPanel>
-                  <News />
-                </TabPanel>
-                {/* END NEWS MENU TAB CONTENT */}
 
                 <TabPanel>
                   <Contact />
                 </TabPanel>
                 {/* END CONTACT MENU TAB CONTENT */}
+                <TabPanel>
+                  <News />
+                </TabPanel>
+                {/* END NEWS MENU TAB CONTENT */}
               </div>
             </div>
           </div>

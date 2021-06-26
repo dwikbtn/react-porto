@@ -250,7 +250,12 @@ h6 {
 /*---------------------------------------------------*/
 /*	02) TOKYO LEFTPART
 /*---------------------------------------------------*/
-
+.navbar-brand h1 {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  
+  }
 .tokyo_tm_all_wrap .leftpart {
   width: 450px;
   height: 100vh;
@@ -1612,6 +1617,12 @@ body.modal {
   .tokyo_tm_all_wrap .leftpart .leftpart_inner .navbar-brand img {
     max-width: 100px;
   }
+  .navbar-brand h1 {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  
+  }
   .tokyo_tm_all_wrap .leftpart .leftpart_inner .copyright {
     display: none;
   }
@@ -1685,6 +1696,12 @@ body.modal {
   }
 }
 @media (max-width: 1040px) {
+  .navbar-brand h1 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+    }
   .mouse-cursor {
     display: none;
   }
