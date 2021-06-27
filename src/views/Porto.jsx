@@ -1,26 +1,11 @@
-import React, {useState} from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { Link } from "react-router-dom";
-import Home from "../../components/Home";
-import About from "../../components/About";
-import Portfolio from "../../components/Portfolio";
-import News from "../../components/News";
-import Contact from "../../components/Contact";
+import React from "react";
+import HomeLight from "../all-home-version/HomeLight";
 
-
-
-
-const HomeLight = (props) => {
-  
- const [def, setDef] = useState(0)
-
-  const redirectHandler = (index) => {
-    setDef(index)
-  }
-
+const HomeDark = () => {
+  document.body.classList.add("dark");
   return (
     <>
-      <Tabs selectedIndex={def} onSelect={redirectHandler}>
+      <Tabs>
         <TabList>
           {/* START LEFT MENU CONTENT */}
           <div className="leftpart">
@@ -103,7 +88,7 @@ const HomeLight = (props) => {
             <div className="tokyo_tm_section">
               <div className="container">
                 <TabPanel>
-                  <Home defIndex = {redirectHandler}/>
+                  <Home />
                 </TabPanel>
                 {/* END HOME MENU TAB CONTENT */}
 
@@ -137,4 +122,4 @@ const HomeLight = (props) => {
   );
 };
 
-export default HomeLight;
+export default HomeDark;
