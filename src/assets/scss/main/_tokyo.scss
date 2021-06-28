@@ -254,8 +254,7 @@ h6 {
   font-size: 20px;
   font-weight: 800;
   text-transform: uppercase;
-  
-  }
+}
 .tokyo_tm_all_wrap .leftpart {
   width: 450px;
   height: 100vh;
@@ -517,9 +516,26 @@ h6 {
   height: 17px;
 }
 
+p.job span {
+  color: rgb(102, 26, 109);
+  cursor: pointer;
+}
+
+p.job span:hover {
+  filter: opacity(0.7);
+  text-decoration: underline;
+}
+
 /*---------------------------------------------------*/
 /*	05) TOKYO ABOUT
 /*---------------------------------------------------*/
+
+.description_inner span {
+  min-width: 90px;
+  display: inline-block;
+  font-weight: 700;
+  color: white;
+}
 
 .tokyo_tm_about {
   width: 100%;
@@ -1618,10 +1634,9 @@ body.modal {
     max-width: 100px;
   }
   .navbar-brand h1 {
-  font-size: 20px;
-  font-weight: 800;
-  text-transform: uppercase;
-  
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
   }
   .tokyo_tm_all_wrap .leftpart .leftpart_inner .copyright {
     display: none;
@@ -1700,8 +1715,7 @@ body.modal {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
-    
-    }
+  }
   .mouse-cursor {
     display: none;
   }

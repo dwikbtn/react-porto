@@ -19,13 +19,15 @@ const About = () => {
         </div>
         {/* END ABOUT IMAGE */}
         <div className="description">
-          <h3 className="name">Adriano Smith &amp; Photographer</h3>
+          <h3 className="name">Dwi Darma Putra</h3>
           <div className="description_inner">
             <div className="left">
               <p>
-                Hello, I am a creative photographer based in New York and happy
-                to travel all over Europe to capture your big day in candid and
-                authentic photos. I will create a lasting memory of the people.
+                Hi, I am Dwi. I am a software developer based in Bali, Indonesia. 
+                i've been doing web development here and there for 2 years. As a self-taught programmer, 
+                I required to be<span>flexible to learn new things, ability to multitask and strong critical solving problems.</span>
+                <br/> <br/> I'm looking for an opportunity to become a part of a team where I
+                can leverage my current skills and continue to grow as software developer.
               </p>
               <div className="tokyo_tm_button">
                 <button onClick={toggleModal} className="ib-button">
@@ -39,34 +41,23 @@ const About = () => {
               <ul>
                 <li>
                   <p>
-                    <span>Birthday:</span>01.07.1990
+                    <span>Birthday:</span>25.10.1998
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Age:</span>31
+                    <span>Age:</span>25
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Address:</span>Ave 11, New York, USA
+                    <span>Address:</span>badung, Bali, Indonesia
                   </p>
                 </li>
                 <li>
                   <p>
                     <span>Email:</span>
-                    <a href="mailto:mail@gmail.com">mail@gmail.com</a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Phone:</span>
-                    <a href="tel:+770221770505">+77 022 177 05 05</a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Study:</span>Univercity of Texas
+                    <a href="mailto:dwidarma101@gmail.com">dwidarma101(at)gmail.com</a>
                   </p>
                 </li>
                 <li>

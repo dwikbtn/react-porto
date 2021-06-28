@@ -3,10 +3,8 @@ import Social from "./Social";
 
 const Home = (props) => {
 
-  const redirectHandler = (e) => {
-    
-    props.defIndex(e)
-    console.log(e);
+  const redirectHandler = () => { 
+    props.defIndex(2)
   }
 
   return (
@@ -27,8 +25,8 @@ const Home = (props) => {
             <h3 className="name">Dwi Darma</h3>
             <p className="job">
               Passionate Website Developer Focusing On Building Revolutionary App.
-              To be flexible to learn new things and always open with new technology. 
-              Didn't elieve me? <span onClick={() => redirectHandler(1)}> see sall my work bellow</span>
+              Always to be flexible learn new things and always open with new technology. 
+              Didn't believe me? <span onClick={redirectHandler}> see sall my work bellow</span>
             </p>
             {/* END JOB */}
             <Social />
