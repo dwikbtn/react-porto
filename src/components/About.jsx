@@ -128,6 +128,7 @@ const About = () => {
                 <div className="right">
                   <div className="about_title">
                     <h3>Back End</h3>
+                    <div className="underline"></div>
                   </div>
                   <div className="skill-list">
                     {backEndSkill.map((skill, index) =>(
@@ -143,6 +144,12 @@ const About = () => {
               </div>
               {/* END MYBOX */}
               
+              <div className="skill-summary my_box">
+                <div className="about_title">
+                  <h3>So What I Can Do?</h3>
+                  <div className="underline"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

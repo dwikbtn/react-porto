@@ -10,7 +10,7 @@ import Contact from "../../components/Contact";
 
 
 
-const HomeLight = (props) => {
+const HomeLight = () => {
   
  const [def, setDef] = useState(0)
 

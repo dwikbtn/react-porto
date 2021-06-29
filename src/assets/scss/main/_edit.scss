@@ -19,3 +19,20 @@
 .underline {
   border-bottom: 2px solid rgb(121, 96, 141);
 }
+// .skill-summary {
+//   h3 {
+//     color: black !important;
+//   }
+// }
+.tokyo_tm_modalbox_about .skill-summary.my_box {
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  .about_title {
+    h3 {
+      color: black;
+    }
+  }
+}
