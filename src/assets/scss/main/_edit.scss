@@ -1,0 +1,21 @@
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  .stack {
+    margin: 10px;
+  }
+  p {
+    text-align: center;
+  }
+  img {
+    width: 45px;
+    min-height: 45px;
+  }
+}
+
+.underline {
+  border-bottom: 2px solid rgb(121, 96, 141);
+}

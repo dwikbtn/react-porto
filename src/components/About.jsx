@@ -15,14 +15,14 @@ const About = () => {
     {skillName: 'react'},
     {skillName: 'gatsby'},
     {skillName: 'next.js'},
-    {skillName: 'css.'},
+    {skillName: 'css'},
     {skillName: 'bootstrap'},
     {skillName: 'tailwind'},
     {skillName: 'SASS'},
   ]
   const backEndSkill = [
     {skillName: 'nodejs'},
-    {skillName: 'express'},
+    {skillName: 'express.js'},
     {skillName: 'psql'},
     {skillName: 'mongodb'},
     {skillName: 'firebase'},
@@ -111,11 +111,12 @@ const About = () => {
                 <div className="left">
                   <div className="about_title">
                     <h3>Front End</h3>
+                    <div className="underline"></div>
                   </div>
                   {/* END ABOUT TITLE */}
                   <div className="skill-list">
                     {frontEndSkill.map((skill, index) =>(
-                      <div  key={index}>
+                      <div className="stack" key={index}>
                         <img src={`/assets/img/skill/frontend/image${index+1}.png`} alt={`stack ${skill.skillName}`} />
                        <p>{skill.skillName}</p>
                       </div>
@@ -130,7 +131,7 @@ const About = () => {
                   </div>
                   <div className="skill-list">
                     {backEndSkill.map((skill, index) =>(
-                      <div  key={index}>
+                      <div key={index} className="stack">
                         <img src={`/assets/img/skill/backend/image${index+1}.png`} alt={`stack ${skill.skillName}`} />
                        <p>{skill.skillName}</p>
                       </div>
