@@ -33,17 +33,6 @@ const Contact = () => {
           </div>
         </div>
         {/* END TITLE */}
-
-        <div className="map_wrap">
-          <div className="map">
-            <ReactMapGL
-              mapStyle={"mapbox://style/mapbox/dark-v9"}
-              mapboxApiAccessToken="pk.eyJ1IjoiYmF5YXppZGgiLCJhIjoiY2tvemdwc3ByMDg1YzJubzQxcDR0cDR3dyJ9.s1zXEb5OPqgBDcmupj3GBA"
-              {...viewport}
-              onViewportChange={(nextViewport) => setViewport(nextViewport)}
-            />
-          </div>
-        </div>
         {/* MENU WRAP */}
 
         <div className="fields">

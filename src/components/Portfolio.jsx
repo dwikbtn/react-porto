@@ -12,7 +12,7 @@ const Portfolio = () => {
             <div className="title_flex">
               <div className="left">
                 <span>Portfolio</span>
-                <h3>Creative Portfolio</h3>
+                <h3>All My Works</h3>
               </div>
             </div>
           </div>
@@ -21,10 +21,9 @@ const Portfolio = () => {
             <Tabs>
               <TabList>
                 <Tab>All</Tab>
-                <Tab>Ui/Ux</Tab>
-                <Tab>Website</Tab>
-                <Tab>Graphic</Tab>
-                <Tab>Creative</Tab>
+                <Tab>Front-End</Tab>
+                <Tab>Back-End</Tab>
+                <Tab>Others</Tab>
               </TabList>
               {/* END TABLIST */}
               <div className="list_wrapper">
@@ -185,39 +184,6 @@ const Portfolio = () => {
                     {/* END PORTFOLIO LIST */}
                   </TabPanel>
                   {/* END GRAPHIC GALLERY */}
-
-                  <TabPanel>
-                    <ul className="portfolio_list">
-                      <li>
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/2.jpg">
-                              <img
-                                src="assets/img/portfolio/2.jpg"
-                                alt="Creative"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END IMAGE */}
-                      <li>
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/3.jpg">
-                              <img
-                                src="assets/img/portfolio/3.jpg"
-                                alt="Creative"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END IMAGE */}
-                    </ul>
-                    {/* END PORTFOLIO LIST */}
-                  </TabPanel>
-                  {/* END CREATIVE PORTFOLIO GALLERY */}
                 </SRLWrapper>
                 {/* END TABPANEL */}
               </div>
