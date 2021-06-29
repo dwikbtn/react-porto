@@ -531,7 +531,6 @@ p.job span:hover {
 /*---------------------------------------------------*/
 
 .description_inner span {
-  min-width: 90px;
   display: inline-block;
   font-weight: 700;
   color: white;
@@ -545,7 +544,7 @@ p.job span:hover {
   padding: 100px 0px 100px 0px;
 }
 .tokyo_tm_about .about_image {
-  width: 100%;
+  width: 55%;
   height: auto;
   clear: both;
   float: left;
