@@ -1,6 +1,4 @@
 import React from "react";
-import { useState } from "react";
-import ReactMapGL from "react-map-gl";
 import { useForm } from "react-hook-form";
 
 const Contact = () => {
@@ -14,12 +12,6 @@ const Contact = () => {
     e.target.reset();
     console("Message submited: " + JSON.stringify(data));
   };
-
-  const [viewport, setViewport] = useState({
-    latitude: 40.712776,
-    longitude: -74.005974,
-    zoom: 8,
-  });
 
   return (
     <>
