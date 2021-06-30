@@ -40,9 +40,10 @@ const About = () => {
           <div className="description_inner">
             <div className="left">
               <p>
-                Hi, I am Dwi. I am a software developer based in Bali, Indonesia. 
-                i've been doing web development here and there for 2 years. As a self-taught programmer, 
-                I required to be<span>flexible to learn new things, ability to multitask and strong critical solving problems.</span>
+                Hi, I am Dwi. I am a software developer based in Bali, Indonesia.
+                I’ve been doing web development here and there for two years.                
+                As a self-taught programmer, I must be <span>flexible to learn new things, multitask, and critical solid solving problems. 
+                </span>
                 <br/> <br/> I'm looking for an opportunity to become a part of a team where I
                 can leverage my current skills and continue to grow as software developer.
               </p>

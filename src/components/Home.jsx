@@ -24,9 +24,9 @@ const Home = (props) => {
           <div className="details">
             <h3 className="name">Dwi Darma</h3>
             <p className="job">
-              Passionate Website Developer Focusing On Building Revolutionary App.
-              Always to be flexible learn new things and always open with new technology. 
-              Didn't believe me? <span onClick={redirectHandler}> see sall my work bellow</span>
+            I am a passionate Website developer on building revolutionary ideas. 
+            Always be flexible learn new things, and constantly open to new technology. 
+             see all my works <span onClick={redirectHandler}> here</span>
             </p>
             {/* END JOB */}
             <Social />
