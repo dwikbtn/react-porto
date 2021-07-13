@@ -17,7 +17,7 @@
 }
 
 .underline {
-  border-bottom: 2px solid rgb(121, 96, 141);
+  border-bottom: 2px solid rgb(75, 69, 80);
 }
 // .skill-summary {
 //   h3 {
@@ -30,9 +30,22 @@
   clear: both;
   display: flex;
   justify-content: center;
+  flex-flow: column wrap;
+  .underline {
+    width: 50%;
+    margin-left: 25%;
+  }
   .about_title {
     h3 {
+      text-align: center;
       color: black;
     }
+  }
+  p {
+    margin-top: 10px;
+    text-align: justify;
+    padding-left: 25%;
+    padding-right: 25%;
+    color: black;
   }
 }

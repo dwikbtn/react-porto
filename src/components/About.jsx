@@ -40,12 +40,16 @@ const About = () => {
           <div className="description_inner">
             <div className="left">
               <p>
-                Hi, I am Dwi. I am a software developer based in Bali, Indonesia.
-                I’ve been doing web development here and there for two years.                
-                As a self-taught programmer, I must be <span>flexible to learn new things, multitask, and critical solid solving problems. 
+                Hi, I am Dwi. I am a software developer based in Bali,
+                Indonesia. I’ve been doing web development here and there for
+                two years. As a self-taught programmer, I must be{" "}
+                <span>
+                  flexible to learn new things, multitask, and critical solid
+                  solving problems.
                 </span>
-                <br/> <br/> I'm looking for an opportunity to become a part of a team where I
-                can leverage my current skills and continue to grow as software developer.
+                <br /> <br /> I'm looking for an opportunity to become a part of
+                a team where I can leverage my current skills and continue to
+                grow as software developer.
               </p>
               <div className="tokyo_tm_button">
                 <button onClick={toggleModal} className="ib-button">
@@ -75,7 +79,9 @@ const About = () => {
                 <li>
                   <p>
                     <span>Email:</span>
-                    <a href="mailto:dwidarma101@gmail.com">dwidarma101(at)gmail.com</a>
+                    <a href="mailto:dwidarma101@gmail.com">
+                      dwidarma101(at)gmail.com
+                    </a>
                   </p>
                 </li>
                 <li>
@@ -116,12 +122,17 @@ const About = () => {
                   </div>
                   {/* END ABOUT TITLE */}
                   <div className="skill-list">
-                    {frontEndSkill.map((skill, index) =>(
+                    {frontEndSkill.map((skill, index) => (
                       <div className="stack" key={index}>
-                        <img src={`/assets/img/skill/frontend/image${index+1}.png`} alt={`stack ${skill.skillName}`} />
-                       <p>{skill.skillName}</p>
+                        <img
+                          src={`/assets/img/skill/frontend/image${
+                            index + 1
+                          }.png`}
+                          alt={`stack ${skill.skillName}`}
+                        />
+                        <p>{skill.skillName}</p>
                       </div>
-                     ))}
+                    ))}
                   </div>
                 </div>
                 {/* END LEFT */}
@@ -132,24 +143,45 @@ const About = () => {
                     <div className="underline"></div>
                   </div>
                   <div className="skill-list">
-                    {backEndSkill.map((skill, index) =>(
+                    {backEndSkill.map((skill, index) => (
                       <div key={index} className="stack">
-                        <img src={`/assets/img/skill/backend/image${index+1}.png`} alt={`stack ${skill.skillName}`} />
-                       <p>{skill.skillName}</p>
+                        <img
+                          src={`/assets/img/skill/backend/image${
+                            index + 1
+                          }.png`}
+                          alt={`stack ${skill.skillName}`}
+                        />
+                        <p>{skill.skillName}</p>
                       </div>
-                     ))}
+                    ))}
                   </div>
                   {/* END TITLE */}
                 </div>
                 {/* END RIGHT */}
               </div>
               {/* END MYBOX */}
-              
+
               <div className="skill-summary my_box">
                 <div className="about_title">
                   <h3>So What I Can Do?</h3>
                   <div className="underline"></div>
                 </div>
+                <p>
+                  I build a clean, SEO Friendly, and responsive website using
+                  HTML, CSS and, tech around javascript. I have solid javascript
+                  experience, including the most widespread and beloved
+                  javascript framework/library, react. I am using the clean
+                  component-based approach to deliver a reusable and responsive
+                  experience. For the perfect pixel styling, I use CSS, SCSS,
+                  and tailwind.
+                </p>
+                <br />
+                <p>
+                  To develop a high-quality application, I must have particular
+                  skills such as critical thinking and good at analyzing
+                  problems. Read documentation and well understanding when it
+                  comes to debugging.
+                </p>
               </div>
             </div>
           </div>
