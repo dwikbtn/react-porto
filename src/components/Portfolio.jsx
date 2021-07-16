@@ -1,12 +1,10 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import SimpleReactLightbox from "simple-react-lightbox";
-import { SRLWrapper } from "simple-react-lightbox";
+import Cards from "./Cards";
 
 const Portfolio = () => {
   return (
     <>
-      <SimpleReactLightbox>
         <div className="tokyo_tm_portfolio">
           <div className="tokyo_tm_title">
             <div className="title_flex">
@@ -27,171 +25,31 @@ const Portfolio = () => {
               </TabList>
               {/* END TABLIST */}
               <div className="list_wrapper">
-                <SRLWrapper>
                   <TabPanel>
-                    <ul className="portfolio_list">
-                      <li>
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/5.jpg">
-                              <img
-                                src="assets/img/portfolio/5.jpg"
-                                alt="Portfolio"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END VIMEO */}
-                      <li>
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/2.jpg">
-                              <img
-                                src="assets/img/portfolio/2.jpg"
-                                alt="portfolio"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END YOUTUBE */}
-                      <li>
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/4.jpg">
-                              <img
-                                src="assets/img/portfolio/4.jpg"
-                                alt="portfolio"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END SOUNDCLOUD */}
-                      <li>
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/3.jpg">
-                              <img
-                                src="assets/img/portfolio/3.jpg"
-                                alt="portfolio"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                    {/* END PORTFOLIO LIST */}
+                    <Cards/>
                   </TabPanel>
                   {/* END ALL PORTFOLIO GALLERY */}
 
                   <TabPanel>
-                    <ul className="portfolio_list">
-                      <li>
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/3.jpg">
-                              <img
-                                src="assets/img/portfolio/3.jpg"
-                                alt="Ui/Ux"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END VIMEO */}
-                      <li>
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/5.jpg">
-                              <img
-                                src="assets/img/portfolio/5.jpg"
-                                alt="Ui/Ux"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END VIMEO */}
-                    </ul>
-                    {/* END PORTFOLIO LIST */}
+                   
                   </TabPanel>
-                  {/* END UI/UX GALLERY */}
+                  {/* END Front end list */}
 
                   <TabPanel>
-                    <ul className="portfolio_list">
-                      <li>
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/2.jpg">
-                              <img
-                                src="assets/img/portfolio/2.jpg"
-                                alt="Website"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END YOUTUBE */}
-                      <li>
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/4.jpg">
-                              <img
-                                src="assets/img/portfolio/4.jpg"
-                                alt="Website"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END YOUTUBE */}
-                    </ul>
-                    {/* END PORTFOLIO LIST */}
+                    
                   </TabPanel>
-                  {/* END WEBSITE GALLERY */}
+                  {/* END backend list */}
 
                   <TabPanel>
-                    <ul className="portfolio_list">
-                      <li>
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/3.jpg">
-                              <img
-                                src="assets/img/portfolio/3.jpg"
-                                alt="Graphic"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END SOUNDCLOUD */}
-                      <li>
-                        <div className="inner">
-                          <div className="entry tokyo_tm_portfolio_animation_wrap">
-                            <a href="assets/img/portfolio/5.jpg">
-                              <img
-                                src="assets/img/portfolio/5.jpg"
-                                alt="Graphic"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      {/* END SOUNDCLOUD */}
-                    </ul>
-                    {/* END PORTFOLIO LIST */}
+                    
                   </TabPanel>
-                  {/* END GRAPHIC GALLERY */}
-                </SRLWrapper>
+                  {/* END others list GALLERY */}
                 {/* END TABPANEL */}
               </div>
               {/* END LIST WRAPPER */}
             </Tabs>
           </div>
         </div>
-      </SimpleReactLightbox>
     </>
   );
 };
