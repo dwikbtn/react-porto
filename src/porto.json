@@ -2,19 +2,75 @@
     "portofolios": [
         {
             "id": 1,
-            "header": "Staycation App",
+            "header": "Staycation",
             "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
             "imageUrl": "images/portofolios-img/staycation.png",
             "githubUrl": "https://github.com/dwikbtn/staycation",
-            "demoUrl": "fb.com"
+            "demoUrl": null,
+            "type": "front-end"
         },
         {
             "id": 2,
-            "header": "Staycation App",
+            "header": "custom order burger",
             "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
-            "imageUrl": "/public/assets/images/img/portofolios-img/staycation.png",
+            "imageUrl": "images/portofolios-img/burger-app.png",
             "githubUrl": "https://github.com/dwikbtn/staycation",
-            "demoUrl": "fb.com"
+            "demoUrl": null,
+            "type": "front-end"
+        },
+        {
+            "id": 3,
+            "header": "Face Detection",
+            "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+            "imageUrl": "images/portofolios-img/face-detection.png",
+            "githubUrl": "https://github.com/dwikbtn/staycation",
+            "demoUrl": null,
+            "type": "front-end"
+        },
+        {
+            "id": 4,
+            "header": "Watch your Expense",
+            "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+            "imageUrl": "images/portofolios-img/expense-app.png",
+            "githubUrl": "https://github.com/dwikbtn/staycation",
+            "demoUrl": null,
+            "type": "front-end"
+        },
+        {
+            "id": 5,
+            "header": "Keiko.corp",
+            "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+            "imageUrl": "images/portofolios-img/keiko.png",
+            "githubUrl": "https://github.com/dwikbtn/staycation",
+            "demoUrl": null,
+            "type": "front-end"
+        },
+        {
+          "id": 6,
+          "header": "Company Landing Page",
+          "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+          "imageUrl": "images/portofolios-img/one-page-landing.png",
+          "githubUrl": "https://github.com/dwikbtn/staycation",
+          "demoUrl": null,
+          "type": "front-end"
+        },
+        {
+          "id": 7,
+          "header": "simple javascript example",
+          "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+          "imageUrl": "images/portofolios-img/simple-javascript-app.png",
+          "githubUrl": "https://github.com/dwikbtn/staycation",
+          "demoUrl": null,
+          "type": "front-end"
+        },
+        {
+          "id": 8,
+          "header": "staycation figma design",
+          "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+          "imageUrl": "images/portofolios-img/staycation-mockup.png",
+          "githubUrl": "https://github.com/dwikbtn/staycation",
+          "demoUrl": null,
+          "type": "front-end"
         }
     ]
 }

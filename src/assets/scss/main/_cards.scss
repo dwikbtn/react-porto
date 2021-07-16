@@ -1,24 +1,30 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+
+  @media only screen and (max-width: 850px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .card-container {
   box-shadow: 0 15px 30px 1px grey;
   background: rgba(92, 88, 88, 0.9);
   text-align: center;
   border-radius: 5px;
-  overflow: visible;
   margin: 3em auto;
   height: auto;
-  width: 500px;
-
+  width: 400px;
+  padding: 10px;
   p {
     text-align: justify;
   }
   .porto-img {
     margin-top: 2em;
-    transition: all 0.3s ease;
-    display: inline-block;
     position: relative;
     overflow: hidden;
-    height: 45%;
-    width: 60%;
     display: inline-block;
     transition: transform 0.2s;
   }
@@ -51,5 +57,4 @@
     transform: translateY(-6px);
     background: rgb(180, 164, 164);
   }
-    
 }

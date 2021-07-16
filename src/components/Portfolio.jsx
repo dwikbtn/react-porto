@@ -30,20 +30,23 @@ const Portfolio = (props) => {
             <div className="list_wrapper">
               <TabPanel>
                 {/* <Cards data={data.portofolios}/> */}
-                {data.portofolios.map(porto => {
-                  return (
-                  <Cards key={porto.id}>
-                    <div className="porto-img">
-                      <img src={porto.imageUrl} alt={porto.header} />
-                    </div>
-                    <h1>{porto.header}</h1>
-                    <p>
-                      {porto.description}
-                    </p>
-                    <button className="porto-btn github">Github</button>
-                    <button className="porto-btn demo">Live Demo</button>
-                  </Cards>)
-                })}
+                <div className="card-grid">
+                  {data.portofolios.map((porto) => {
+                    return (
+                      <Cards key={porto.id}>
+                        <div className="porto-img">
+                          <img src={porto.imageUrl} alt={porto.header} />
+                        </div>
+                        <h1>{porto.header}</h1>
+                        <p>{porto.description}</p>
+                        <a href={porto.githubUrl} target= "_blank" rel="noreferrer">
+                          <button className="porto-btn github">Github</button>
+                        </a>
+                        <button className="porto-btn demo">Live Demo</button>
+                      </Cards>
+                    );
+                  })}
+                </div>
               </TabPanel>
               {/* END ALL PORTFOLIO GALLERY */}
 
