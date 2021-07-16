@@ -40,15 +40,16 @@
     color: #fff;
     font-weight: bold;
     font-size: medium;
-
   }
-  .github{
-      background: #333;
+  .github {
+    background: #333;
   }
-  .demo{
-        background: #1a66ff;
+  .demo {
+    background: #1a66ff;
   }
-  .porto-btn:hover{transform: translateY(-6px);}
-
-
+  .porto-btn:hover {
+    transform: translateY(-6px);
+    background: rgb(180, 164, 164);
+  }
+    
 }
