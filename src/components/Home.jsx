@@ -4,7 +4,7 @@ import Social from "./Social";
 const Home = (props) => {
 
   const redirectHandler = () => { 
-    props.defIndex(2)
+    props.defIndex(1)
   }
 
   return (

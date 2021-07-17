@@ -61,7 +61,7 @@
           "imageUrl": "images/portofolios-img/simple-javascript-app.png",
           "githubUrl": "https://github.com/dwikbtn/staycation",
           "demoUrl": null,
-          "type": "front-end"
+          "type": "back-end"
         },
         {
           "id": 8,
@@ -70,7 +70,7 @@
           "imageUrl": "images/portofolios-img/staycation-mockup.png",
           "githubUrl": "https://github.com/dwikbtn/staycation",
           "demoUrl": null,
-          "type": "front-end"
+          "type": "others"
         }
     ]
 }
