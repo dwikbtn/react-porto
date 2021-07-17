@@ -5,7 +5,7 @@ import Cards from "./Cards";
 //json
 import data from "../porto.json";
 
-const Portfolio = (props) => {
+const Portfolio = React.memo((props) => {
   //state
   const[FEState, setFE]=useState(false)
   const [BEState, setBE] = useState(false)
@@ -28,7 +28,7 @@ const Portfolio = (props) => {
     setOthers(true);
   };
   //filter the tabs
-  const allTabPorto = data.portofolios.map((porto) => {
+  const allTabPorto =data.portofolios.map((porto) => {
     return (
       <Cards key={porto.id}>
         <div className="porto-img">
@@ -55,7 +55,7 @@ const Portfolio = (props) => {
     }
     return null
   });
-  const filteredPorto = filteredData.map((porto) => {
+  const filteredPorto =(filteredData.map((porto) => {
     return (
       <Cards key={porto.id}>
         <div className="porto-img">
@@ -69,9 +69,9 @@ const Portfolio = (props) => {
         <button className="porto-btn demo">Live Demo</button>
       </Cards>
     );
-  });
+  }));
   return (
-    <>
+    <> 
       <div className="tokyo_tm_portfolio">
         <div className="tokyo_tm_title">
           <div className="title_flex">
@@ -120,6 +120,6 @@ const Portfolio = (props) => {
       </div>
     </>
   );
-};
+});
 
 export default Portfolio;
