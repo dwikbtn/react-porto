@@ -39,7 +39,15 @@ const Portfolio = React.memo((props) => {
         <a href={porto.githubUrl} target="_blank" rel="noreferrer">
           <button className="porto-btn github">Github</button>
         </a>
-        <button className="porto-btn demo">Live Demo</button>
+        {porto.demoUrl === null ? (
+          <button disabled>
+            Live Demo
+          </button>
+        ) : (
+          <a href={porto.demoUrl} target="_blank" rel="noopener noreferrer">
+            <button className="porto-btn demo">Live Demo</button>{" "}
+          </a>
+        )}
       </Cards>
     );
   });
@@ -66,7 +74,15 @@ const Portfolio = React.memo((props) => {
         <a href={porto.githubUrl} target="_blank" rel="noreferrer">
           <button className="porto-btn github">Github</button>
         </a>
-        <button className="porto-btn demo">Live Demo</button>
+        {porto.demoUrl === null ? (
+          <button disabled className="porto-btn demo ">
+            Live Demo
+          </button>
+        ) : (
+          <a href={porto.demoUrl} target="_blank" rel="noopener noreferrer">
+            <button className="porto-btn demo">Live Demo</button>{" "}
+          </a>
+        )}
       </Cards>
     );
   }));
