@@ -3,7 +3,7 @@
         {
             "id": 1,
             "header": "Staycation",
-            "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+            "description": "A booking accommodation app. Build with react, bootstrap, sass—a fully interactive website and smooth user experience. back-end with express and MongoDB(wip).",
             "imageUrl": "images/portofolios-img/staycation.png",
             "githubUrl": "https://github.com/dwikbtn/staycation",
             "demoUrl": "https://fb.com",
@@ -12,7 +12,7 @@
         {
             "id": 2,
             "header": "custom order burger",
-            "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+            "description": "a burger order app with unique features such as order and costume your own burger. created with react",
             "imageUrl": "images/portofolios-img/burger-app.png",
             "githubUrl": "https://github.com/dwikbtn/staycation",
             "demoUrl": null,
@@ -21,7 +21,7 @@
         {
             "id": 3,
             "header": "Face Detection",
-            "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+            "description": "another react website. this app can detect any face and give it square around it. fully integreted with clarifai api",
             "imageUrl": "images/portofolios-img/face-detection.png",
             "githubUrl": "https://github.com/dwikbtn/staycation",
             "demoUrl": null,
@@ -30,7 +30,7 @@
         {
             "id": 4,
             "header": "Watch your Expense",
-            "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+            "description": "simple react app to monitor your expense. you can also filtered it each months",
             "imageUrl": "images/portofolios-img/expense-app.png",
             "githubUrl": "https://github.com/dwikbtn/staycation",
             "demoUrl": null,
@@ -39,7 +39,7 @@
         {
             "id": 5,
             "header": "Keiko.corp",
-            "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+            "description": "Fun project I do participate in Hacktober 2020, we build app for imaginative corporation",
             "imageUrl": "images/portofolios-img/keiko.png",
             "githubUrl": "https://github.com/dwikbtn/staycation",
             "demoUrl": null,
@@ -48,7 +48,7 @@
         {
           "id": 6,
           "header": "Company Landing Page",
-          "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+          "description": "a simple company landing page. built with only html, css, javascript",
           "imageUrl": "images/portofolios-img/one-page-landing.png",
           "githubUrl": "https://github.com/dwikbtn/staycation",
           "demoUrl": null,
@@ -57,7 +57,7 @@
         {
           "id": 7,
           "header": "simple javascript example",
-          "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+          "description": "simple app that you can build with javascript. see the code on my github page",
           "imageUrl": "images/portofolios-img/simple-javascript-app.png",
           "githubUrl": "https://github.com/dwikbtn/staycation",
           "demoUrl": null,
@@ -66,7 +66,7 @@
         {
           "id": 8,
           "header": "staycation figma design",
-          "description": "lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, numquam.",
+          "description": "design for my staycation app",
           "imageUrl": "images/portofolios-img/staycation-mockup.png",
           "githubUrl": "https://github.com/dwikbtn/staycation",
           "demoUrl": null,
