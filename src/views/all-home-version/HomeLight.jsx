@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Home from "../../components/Home";
 import About from "../../components/About";
 import Portfolio from "../../components/Portfolio";
-import News from "../../components/News";
 import Contact from "../../components/Contact";
 
 
@@ -72,7 +71,13 @@ const HomeLight = () => {
                       src="/assets/img/svg/paper.svg"
                       alt="paper"
                     />
-                    <span className="menu_content">Blog Post</span>
+                    <a
+                      href="http://chsintrovert.blogspot.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="menu_content">Blog Post</span>
+                    </a>
                   </Tab>
                 </ul>
               </div>
@@ -82,7 +87,7 @@ const HomeLight = () => {
                 <p>
                   &copy; {new Date().getFullYear()} Portfolio <br /> Created by
                   <a
-                    href="/"
+                    href="/https://github.com/dwikbtn/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -103,7 +108,7 @@ const HomeLight = () => {
             <div className="tokyo_tm_section">
               <div className="container">
                 <TabPanel>
-                  <Home defIndex = {redirectHandler}/>
+                  <Home defIndex={redirectHandler} />
                 </TabPanel>
                 {/* END HOME MENU TAB CONTENT */}
 
@@ -117,13 +122,16 @@ const HomeLight = () => {
                 </TabPanel>
                 {/* END ABOUT MENU TAB CONTENT */}
 
-
                 <TabPanel>
                   <Contact />
                 </TabPanel>
                 {/* END CONTACT MENU TAB CONTENT */}
                 <TabPanel>
-                  <News />
+                  <a 
+                    href="http://chsiintrovert.blogspot.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  > </a>
                 </TabPanel>
                 {/* END NEWS MENU TAB CONTENT */}
               </div>

@@ -16,7 +16,7 @@ const NotFound = () => {
             <p>
               &copy; 2021 Tokyo <br /> Created by
               <a
-                href="https://themeforest.net/user/ib-themes"
+                href="/https://github.com/dwikbtn/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -54,7 +54,7 @@ const NotFound = () => {
           <p>
             &copy; 2021 Tokyo Created by
             <a
-              href="https://themeforest.net/user/ib-themes"
+              href="/https://github.com/dwikbtn/"
               target="_blank"
               rel="noreferrer"
             >

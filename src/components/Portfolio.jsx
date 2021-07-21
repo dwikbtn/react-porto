@@ -75,9 +75,7 @@ const Portfolio = React.memo((props) => {
           <button className="porto-btn github">Github</button>
         </a>
         {porto.demoUrl === null ? (
-          <button disabled className="porto-btn demo ">
-            Live Demo
-          </button>
+          <button disabled>Live Demo</button>
         ) : (
           <a href={porto.demoUrl} target="_blank" rel="noopener noreferrer">
             <button className="porto-btn demo">Live Demo</button>{" "}

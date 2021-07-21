@@ -2,7 +2,6 @@ import React from "react";
 // import Preview from "../views/Preview"
 import HomeLight from "../views/all-home-version/HomeLight";
 import HomeDark from "../views/all-home-version/HomeDark";
-import Portfolio from "../components/Portfolio";
 import NotFound from "../views/NotFound";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -14,7 +13,6 @@ const Routes = () => {
           <Route exact path="/" component={HomeDark} />
           <Route path="/home-light" component={HomeLight} />
           <Route path="/home-dark" component={HomeDark} />
-          <Route path="/portfolio" component={Portfolio} />
           <Route component={NotFound} />
         </Switch>
       </Router>
