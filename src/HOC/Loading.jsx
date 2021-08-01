@@ -1,7 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+import "./loading.css";
 
 const Loading = (props) => {
-  return <h1>Loading the data</h1>;
+  return (
+    <div className="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  );
 };
 
 export default Loading;

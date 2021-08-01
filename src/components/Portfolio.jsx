@@ -3,11 +3,11 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Cards from "./Cards";
 
 //json
-import data from "../porto.json";
+// import data from "../porto.json";
 import Loading from "../HOC/Loading";
 
 const Portfolio = React.memo((props) => {
-  // const [data, setData] = useState(null);
+  const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -15,8 +15,8 @@ const Portfolio = React.memo((props) => {
       "https://react-portofolio-a5072-default-rtdb.firebaseio.com/portofolios.json";
     fetch(apiUrl)
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
+      .then((jsonData) => {
+        setData(jsonData);
         setLoading(true);
       });
   }, []);
@@ -42,7 +42,10 @@ const Portfolio = React.memo((props) => {
     setOthers(true);
   };
   //filter the tabs
-  const allTabPorto = data.portofolios.map((porto) => {
+  if (loading === false) {
+    return <Loading />;
+  }
+  const allTabPorto = data.map((porto) => {
     return (
       <Cards key={porto.id}>
         <div className="porto-img">
@@ -67,7 +70,7 @@ const Portfolio = React.memo((props) => {
       </Cards>
     );
   });
-  const filteredData = data.portofolios.filter((porto) => {
+  const filteredData = data.filter((porto) => {
     if (porto.type === "front-end" && FEState === true) {
       return true;
     }
@@ -128,7 +131,7 @@ const Portfolio = React.memo((props) => {
             <div className="list_wrapper">
               <TabPanel>
                 <div className="card-grid">
-                  {loading === true ? allTabPorto : <Loading />}
+                  {loading ? allTabPorto : <Loading />}
                 </div>
               </TabPanel>
               {/* END ALL PORTFOLIO GALLERY */}
