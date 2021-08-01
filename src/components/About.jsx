@@ -11,29 +11,27 @@ const About = () => {
   }
 
   const frontEndSkill = [
-    {skillName: 'javascript'},
-    {skillName: 'react'},
-    {skillName: 'gatsby'},
-    {skillName: 'next.js'},
-    {skillName: 'css'},
-    {skillName: 'bootstrap'},
-    {skillName: 'tailwind'},
-    {skillName: 'SASS'},
-  ]
+    { skillName: "javascript" },
+    { skillName: "react" },
+    { skillName: "gatsby" },
+    { skillName: "next.js" },
+    { skillName: "css" },
+    { skillName: "bootstrap" },
+    { skillName: "tailwind" },
+    { skillName: "SASS" },
+  ];
   const backEndSkill = [
-    {skillName: 'nodejs'},
-    {skillName: 'express.js'},
-    {skillName: 'psql'},
-    {skillName: 'mongodb'},
-    {skillName: 'firebase'},
-  ]
+    { skillName: "nodejs" },
+    { skillName: "express.js" },
+    { skillName: "psql" },
+    { skillName: "mongodb" },
+    { skillName: "firebase" },
+  ];
 
   return (
     <>
       <div className="tokyo_tm_about">
-        <div className="about_image">
-         {/* img random */}
-        </div>
+        <div className="about_image">{/* img random */}</div>
         {/* END ABOUT IMAGE */}
         <div className="description">
           <h3 className="name">Dwi Darma Putra</h3>
@@ -49,7 +47,7 @@ const About = () => {
                 </span>
                 <br /> <br /> I'm looking for an opportunity to become a part of
                 a team where I can leverage my current skills and continue to
-                grow as software developer.
+                grow as software developer. big fan of Murakami here.
               </p>
               <div className="tokyo_tm_button">
                 <button onClick={toggleModal} className="ib-button">
@@ -68,12 +66,12 @@ const About = () => {
                 </li>
                 <li>
                   <p>
-                    <span>Age:</span>25
+                    <span>Age:</span>21
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Address:</span>badung, Bali, Indonesia
+                    <span>Address:</span>Badung, Bali, Indonesia
                   </p>
                 </li>
                 <li>

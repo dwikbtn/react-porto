@@ -1,26 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Cards from "./Cards";
 
 //json
 import data from "../porto.json";
+import Loading from "../HOC/Loading";
 
 const Portfolio = React.memo((props) => {
+  // const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const apiUrl =
+      "https://react-portofolio-a5072-default-rtdb.firebaseio.com/portofolios.json";
+    fetch(apiUrl)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setLoading(true);
+      });
+  }, []);
+
   //state
-  const[FEState, setFE]=useState(false)
-  const [BEState, setBE] = useState(false)
+  const [FEState, setFE] = useState(false);
+  const [BEState, setBE] = useState(false);
   const [othersState, setOthers] = useState(false);
   //on Select Tab
   const onFeTab = () => {
-    setFE(true)
-    setBE(false)
-    setOthers(false)
-  }
+    setFE(true);
+    setBE(false);
+    setOthers(false);
+  };
   const onBeTab = () => {
     setFE(false);
     setBE(true);
     setOthers(false);
-    
   };
   const onOtherTab = () => {
     setFE(false);
@@ -28,7 +42,7 @@ const Portfolio = React.memo((props) => {
     setOthers(true);
   };
   //filter the tabs
-  const allTabPorto =data.portofolios.map((porto) => {
+  const allTabPorto = data.portofolios.map((porto) => {
     return (
       <Cards key={porto.id}>
         <div className="porto-img">
@@ -36,13 +50,15 @@ const Portfolio = React.memo((props) => {
         </div>
         <h1>{porto.header}</h1>
         <p>{porto.description}</p>
-        <a href={porto.githubUrl} target="_blank" rel="noreferrer">
-          <button className="porto-btn github">Github</button>
-        </a>
+        {porto.githubUrl === null ? (
+          <button disabled>Github</button>
+        ) : (
+          <a href={porto.githubUrl} target="_blank" rel="noreferrer">
+            <button className="porto-btn github">Github</button>
+          </a>
+        )}
         {porto.demoUrl === null ? (
-          <button disabled>
-            Live Demo
-          </button>
+          <button disabled>Live Demo</button>
         ) : (
           <a href={porto.demoUrl} target="_blank" rel="noopener noreferrer">
             <button className="porto-btn demo">Live Demo</button>{" "}
@@ -61,9 +77,9 @@ const Portfolio = React.memo((props) => {
     if (porto.type === "others" && othersState === true) {
       return true;
     }
-    return null
+    return null;
   });
-  const filteredPorto =(filteredData.map((porto) => {
+  const filteredPorto = filteredData.map((porto) => {
     return (
       <Cards key={porto.id}>
         <div className="porto-img">
@@ -71,9 +87,13 @@ const Portfolio = React.memo((props) => {
         </div>
         <h1>{porto.header}</h1>
         <p>{porto.description}</p>
-        <a href={porto.githubUrl} target="_blank" rel="noreferrer">
-          <button className="porto-btn github">Github</button>
-        </a>
+        {porto.githubUrl === null ? (
+          <button disabled>Github</button>
+        ) : (
+          <a href={porto.githubUrl} target="_blank" rel="noreferrer">
+            <button className="porto-btn github">Github</button>
+          </a>
+        )}
         {porto.demoUrl === null ? (
           <button disabled>Live Demo</button>
         ) : (
@@ -83,9 +103,9 @@ const Portfolio = React.memo((props) => {
         )}
       </Cards>
     );
-  }));
+  });
   return (
-    <> 
+    <>
       <div className="tokyo_tm_portfolio">
         <div className="tokyo_tm_title">
           <div className="title_flex">
@@ -107,7 +127,9 @@ const Portfolio = React.memo((props) => {
             {/* END TABLIST */}
             <div className="list_wrapper">
               <TabPanel>
-                <div className="card-grid">{allTabPorto}</div>
+                <div className="card-grid">
+                  {loading === true ? allTabPorto : <Loading />}
+                </div>
               </TabPanel>
               {/* END ALL PORTFOLIO GALLERY */}
 
