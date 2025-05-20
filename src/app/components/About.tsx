@@ -66,7 +66,7 @@ const About = () => {
                 </li>
                 <li>
                   <p>
-                    <span>Age:</span>21
+                    <span>Age:</span>26
                   </p>
                 </li>
                 <li>

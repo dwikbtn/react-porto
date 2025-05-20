@@ -70,7 +70,7 @@ const HomeLight = () => {
                       alt="paper"
                     />
                     <a
-                      href="http://chsintrovert.blogspot.com"
+                      href="https://dev.to/dwikbtn"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -85,7 +85,7 @@ const HomeLight = () => {
                 <p>
                   &copy; {new Date().getFullYear()} Portfolio <br /> Created by
                   <a
-                    href="/https://github.com/dwikbtn/"
+                    href="https://github.com/dwikbtn/"
                     target="_blank"
                     rel="noreferrer"
                   >

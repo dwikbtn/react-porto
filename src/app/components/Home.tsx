@@ -1,5 +1,6 @@
 import React from "react";
 import Social from "./Social";
+
 type Props = {
   defIndex: (index: number) => void;
 };
@@ -28,7 +29,7 @@ const Home = (props: Props) => {
               I am a passionate Website developer on building revolutionary
               ideas. Always be flexible learn new things, and constantly open to
               new technology. see all my works{" "}
-              <span onClick={redirectHandler}> here</span>
+              <span onClick={redirectHandler}>here</span>
             </p>
             {/* END JOB */}
             <Social />
