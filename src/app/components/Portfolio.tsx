@@ -1,8 +1,8 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Cards from "./Cards";
+// import Cards from "./Cards";
 
-const Portfolio = React.memo((props) => {
+const Portfolio = () => {
   // const [data, setData] = useState(null);
   // const [loading, setLoading] = useState(false);
 
@@ -71,6 +71,6 @@ const Portfolio = React.memo((props) => {
       </div>
     </>
   );
-});
+};
 
 export default Portfolio;

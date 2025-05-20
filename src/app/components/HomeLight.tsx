@@ -24,7 +24,7 @@ const HomeLight = () => {
             <div className="leftpart_inner">
               <div className="logo">
                 <Link className="navbar-brand" href="/">
-                  <h1 className="name">Dwi's Porto</h1>
+                  <h1 className="name">{`Dwi's Porto`}</h1>
                 </Link>
               </div>
               {/* END LOGO */}

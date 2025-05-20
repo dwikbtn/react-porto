@@ -38,16 +38,17 @@ const About = () => {
           <div className="description_inner">
             <div className="left">
               <p>
-                Hi, I am Dwi. I am a software developer based in Bali,
+                {`Hi, I am Dwi. I am a software developer based in Bali,
                 Indonesia. I’ve been doing web development here and there for
-                two years. As a self-taught programmer, I must be{" "}
+                two years. As a self-taught programmer, I must be`}
                 <span>
-                  flexible to learn new things, multitask, and critical solid
-                  solving problems.
+                  {`flexible to learn new things, multitask, and critical solid
+                  solving problems.`}
                 </span>
-                <br /> <br /> I'm looking for an opportunity to become a part of
+                <br /> <br />{" "}
+                {`I'm looking for an opportunity to become a part of
                 a team where I can leverage my current skills and continue to
-                grow as software developer. big fan of Murakami here.
+                grow as software developer. big fan of Murakami here.`}
               </p>
               <div className="tokyo_tm_button">
                 <button onClick={toggleModal} className="ib-button">
