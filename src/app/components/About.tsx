@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
-Modal.setAppElement("#root");
+// Modal.setAppElement("#__next");
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,7 +66,7 @@ const About = () => {
                 </li>
                 <li>
                   <p>
-                    <span>Age:</span>21
+                    <span>Age:</span>26
                   </p>
                 </li>
                 <li>

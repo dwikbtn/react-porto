@@ -2,7 +2,6 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 
-
 const Contact = () => {
   const {
     register,
@@ -10,7 +9,7 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data, e) => {
+  const onSubmit = (any, e) => {
     emailjs
       .sendForm(
         "service_nep0pbj",

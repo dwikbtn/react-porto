@@ -1,21 +1,19 @@
-import React, {useState} from "react";
+"use client";
+import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { Link } from "react-router-dom";
-import Home from "../../components/Home";
-import About from "../../components/About";
-import Portfolio from "../../components/Portfolio";
-import Contact from "../../components/Contact";
 
-
-
+import Home from "./Home";
+import About from "./About";
+import Portfolio from "./Portfolio";
+import Contact from "./Contact";
+import Link from "next/link";
 
 const HomeLight = () => {
-  
- const [def, setDef] = useState(0)
+  const [def, setDef] = useState(0);
 
-  const redirectHandler = (index) => {
-    setDef(index)
-  }
+  const redirectHandler = (index: number) => {
+    setDef(index);
+  };
 
   return (
     <>
@@ -25,7 +23,7 @@ const HomeLight = () => {
           <div className="leftpart">
             <div className="leftpart_inner">
               <div className="logo">
-                <Link className="navbar-brand" to="/">
+                <Link className="navbar-brand" href="/">
                   <h1 className="name">Dwi's Porto</h1>
                 </Link>
               </div>
@@ -72,7 +70,7 @@ const HomeLight = () => {
                       alt="paper"
                     />
                     <a
-                      href="http://chsintrovert.blogspot.com"
+                      href="https://dev.to/dwikbtn"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -87,7 +85,7 @@ const HomeLight = () => {
                 <p>
                   &copy; {new Date().getFullYear()} Portfolio <br /> Created by
                   <a
-                    href="/https://github.com/dwikbtn/"
+                    href="https://github.com/dwikbtn/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -127,11 +125,13 @@ const HomeLight = () => {
                 </TabPanel>
                 {/* END CONTACT MENU TAB CONTENT */}
                 <TabPanel>
-                  <a 
-                    href="http://chsiintrovert.blogspot.com"
+                  <a
+                    href="https://dev.to/dwikbtn"
                     target="_blank"
                     rel="noopener noreferrer"
-                  > </a>
+                  >
+                    {" "}
+                  </a>
                 </TabPanel>
                 {/* END NEWS MENU TAB CONTENT */}
               </div>

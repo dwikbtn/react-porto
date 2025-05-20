@@ -2,14 +2,13 @@
 import Modal from "react-modal";
 // import Social from "./Social";
 
-Modal.setAppElement("#root");
+// Modal.setAppElement("#__next");
 
 const News = () => {
   // const [isOpen, setIsOpen] = useState(false);
   // const [isOpen2, setIsOpen2] = useState(false);
   // const [isOpen3, setIsOpen3] = useState(false);
   // const [isOpen4, setIsOpen4] = useState(false);
-
   // function toggleModalOne() {
   //   setIsOpen(!isOpen);
   // }
@@ -22,7 +21,6 @@ const News = () => {
   // function toggleModalFour() {
   //   setIsOpen4(!isOpen4);
   // }
-
   // return (
   //   <>
   //     <div className="tokyo_tm_news">
@@ -35,7 +33,6 @@ const News = () => {
   //         </div>
   //       </div>
   //       {/* END TITLE */}
-
   //       <ul>
   //         <li>
   //           <div className="list_inner">
@@ -57,7 +54,6 @@ const News = () => {
   //                 </p>
   //               </div>
   //               {/* END EXTRA */}
-
   //               <h3 className="title" onClick={toggleModalOne}>
   //                 Format releases a new tool that enables direct video hosting
   //               </h3>
@@ -69,7 +65,6 @@ const News = () => {
   //               {/* END READ MORE BUTTON */}
   //             </div>
   //             {/* END DETAILS */}
-
   //             {/* START MODAL */}
   //             <Modal
   //               isOpen={isOpen}
@@ -189,7 +184,6 @@ const News = () => {
   //           </div>
   //         </li>
   //         {/* END SINGLE BLOG */}
-
   //         <li>
   //           <div className="list_inner">
   //             <div className="image" onClick={toggleModalTwo}>
@@ -202,7 +196,6 @@ const News = () => {
   //               ></div>
   //             </div>
   //             {/* END IMAGE */}
-
   //             <div className="details">
   //               <div className="extra">
   //                 <p className="date">
@@ -211,7 +204,6 @@ const News = () => {
   //                 </p>
   //               </div>
   //               {/* END EXTRA */}
-
   //               <h3 className="title" onClick={toggleModalTwo}>
   //                 Sony announced two new full frame cameras with zero fanfare
   //               </h3>
@@ -222,7 +214,6 @@ const News = () => {
   //               </div>
   //               {/* END READ MORE BUTTON */}
   //             </div>
-
   //             <Modal
   //               isOpen={isOpen2}
   //               onRequestClose={toggleModalTwo}
@@ -340,7 +331,6 @@ const News = () => {
   //           {/* END LIST INNER */}
   //         </li>
   //         {/* END SINGLE BLOG */}
-
   //         <li>
   //           <div className="list_inner">
   //             <div className="image" onClick={toggleModalThree}>
@@ -353,7 +343,6 @@ const News = () => {
   //               ></div>
   //             </div>
   //             {/* END IMAGE */}
-
   //             <div className="details">
   //               <div className="extra">
   //                 <p className="date">
@@ -361,7 +350,6 @@ const News = () => {
   //                   <span>15 Feb 2021</span>
   //                 </p>
   //               </div>
-
   //               <h3 className="title" onClick={toggleModalThree}>
   //                 Why every photographer should shoot film, even in 2021
   //               </h3>
@@ -372,7 +360,6 @@ const News = () => {
   //               </div>
   //             </div>
   //             {/* END DETAILS */}
-
   //             {/* START MODAL */}
   //             <Modal
   //               isOpen={isOpen3}
@@ -485,7 +472,6 @@ const News = () => {
   //           {/* END LIST INNER */}
   //         </li>
   //         {/* END SINGLE BLOG */}
-
   //         <li>
   //           <div className="list_inner">
   //             <div className="image" onClick={toggleModalFour}>
@@ -498,7 +484,6 @@ const News = () => {
   //               ></div>
   //             </div>
   //             {/* END IMAGE */}
-
   //             <div className="details">
   //               <div className="extra">
   //                 <p className="date">
@@ -507,7 +492,6 @@ const News = () => {
   //                 </p>
   //               </div>
   //               {/* END EXTRA */}
-
   //               <h3 className="title" onClick={toggleModalFour}>
   //                 Stay creative in lockdown with these fun photo projects
   //               </h3>
@@ -543,7 +527,6 @@ const News = () => {
   //                       ></div>
   //                     </div>
   //                     {/* END IMAGE */}
-
   //                     <div className="details">
   //                       <div className="extra">
   //                         <p className="date">
@@ -557,7 +540,6 @@ const News = () => {
   //                       </h3>
   //                     </div>
   //                     {/* END DETAILS */}
-
   //                     <div className="main_content ">
   //                       <div className="descriptions">
   //                         <p className="bigger">
